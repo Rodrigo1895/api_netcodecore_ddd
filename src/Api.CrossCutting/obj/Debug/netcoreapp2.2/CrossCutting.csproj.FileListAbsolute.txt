@@ -1,0 +1,16 @@
+C:\Users\Rodrigo\Desktop\Cursos\Curso ASPNetCore API DDD - Udemy\curso_api_netcode_ddd\src\Api.CrossCutting\bin\Debug\netcoreapp2.2\CrossCutting.deps.json
+C:\Users\Rodrigo\Desktop\Cursos\Curso ASPNetCore API DDD - Udemy\curso_api_netcode_ddd\src\Api.CrossCutting\bin\Debug\netcoreapp2.2\CrossCutting.dll
+C:\Users\Rodrigo\Desktop\Cursos\Curso ASPNetCore API DDD - Udemy\curso_api_netcode_ddd\src\Api.CrossCutting\bin\Debug\netcoreapp2.2\CrossCutting.pdb
+C:\Users\Rodrigo\Desktop\Cursos\Curso ASPNetCore API DDD - Udemy\curso_api_netcode_ddd\src\Api.CrossCutting\obj\Debug\netcoreapp2.2\CrossCutting.csprojAssemblyReference.cache
+C:\Users\Rodrigo\Desktop\Cursos\Curso ASPNetCore API DDD - Udemy\curso_api_netcode_ddd\src\Api.CrossCutting\obj\Debug\netcoreapp2.2\CrossCutting.csproj.CoreCompileInputs.cache
+C:\Users\Rodrigo\Desktop\Cursos\Curso ASPNetCore API DDD - Udemy\curso_api_netcode_ddd\src\Api.CrossCutting\obj\Debug\netcoreapp2.2\CrossCutting.AssemblyInfoInputs.cache
+C:\Users\Rodrigo\Desktop\Cursos\Curso ASPNetCore API DDD - Udemy\curso_api_netcode_ddd\src\Api.CrossCutting\obj\Debug\netcoreapp2.2\CrossCutting.AssemblyInfo.cs
+C:\Users\Rodrigo\Desktop\Cursos\Curso ASPNetCore API DDD - Udemy\curso_api_netcode_ddd\src\Api.CrossCutting\obj\Debug\netcoreapp2.2\CrossCutting.dll
+C:\Users\Rodrigo\Desktop\Cursos\Curso ASPNetCore API DDD - Udemy\curso_api_netcode_ddd\src\Api.CrossCutting\obj\Debug\netcoreapp2.2\CrossCutting.pdb
+C:\Users\Rodrigo\Desktop\Cursos\Curso ASPNetCore API DDD - Udemy\curso_api_netcode_ddd\src\Api.CrossCutting\bin\Debug\netcoreapp2.2\Data.dll
+C:\Users\Rodrigo\Desktop\Cursos\Curso ASPNetCore API DDD - Udemy\curso_api_netcode_ddd\src\Api.CrossCutting\bin\Debug\netcoreapp2.2\Domain.dll
+C:\Users\Rodrigo\Desktop\Cursos\Curso ASPNetCore API DDD - Udemy\curso_api_netcode_ddd\src\Api.CrossCutting\bin\Debug\netcoreapp2.2\Service.dll
+C:\Users\Rodrigo\Desktop\Cursos\Curso ASPNetCore API DDD - Udemy\curso_api_netcode_ddd\src\Api.CrossCutting\bin\Debug\netcoreapp2.2\Domain.pdb
+C:\Users\Rodrigo\Desktop\Cursos\Curso ASPNetCore API DDD - Udemy\curso_api_netcode_ddd\src\Api.CrossCutting\bin\Debug\netcoreapp2.2\Service.pdb
+C:\Users\Rodrigo\Desktop\Cursos\Curso ASPNetCore API DDD - Udemy\curso_api_netcode_ddd\src\Api.CrossCutting\bin\Debug\netcoreapp2.2\Data.pdb
+C:\Users\Rodrigo\Desktop\Cursos\Curso ASPNetCore API DDD - Udemy\curso_api_netcode_ddd\src\Api.CrossCutting\obj\Debug\netcoreapp2.2\CrossCutting.csproj.CopyComplete

@@ -1,0 +1,14 @@
+C:\Users\Rodrigo\Desktop\Cursos\Curso ASPNetCore API DDD - Udemy\curso_api_netcode_ddd\src\Api.Data\bin\Debug\netcoreapp2.2\Data.deps.json
+C:\Users\Rodrigo\Desktop\Cursos\Curso ASPNetCore API DDD - Udemy\curso_api_netcode_ddd\src\Api.Data\bin\Debug\netcoreapp2.2\Data.dll
+C:\Users\Rodrigo\Desktop\Cursos\Curso ASPNetCore API DDD - Udemy\curso_api_netcode_ddd\src\Api.Data\bin\Debug\netcoreapp2.2\Data.pdb
+C:\Users\Rodrigo\Desktop\Cursos\Curso ASPNetCore API DDD - Udemy\curso_api_netcode_ddd\src\Api.Data\obj\Debug\netcoreapp2.2\Data.csprojAssemblyReference.cache
+C:\Users\Rodrigo\Desktop\Cursos\Curso ASPNetCore API DDD - Udemy\curso_api_netcode_ddd\src\Api.Data\obj\Debug\netcoreapp2.2\Data.csproj.CoreCompileInputs.cache
+C:\Users\Rodrigo\Desktop\Cursos\Curso ASPNetCore API DDD - Udemy\curso_api_netcode_ddd\src\Api.Data\obj\Debug\netcoreapp2.2\Data.AssemblyInfoInputs.cache
+C:\Users\Rodrigo\Desktop\Cursos\Curso ASPNetCore API DDD - Udemy\curso_api_netcode_ddd\src\Api.Data\obj\Debug\netcoreapp2.2\Data.AssemblyInfo.cs
+C:\Users\Rodrigo\Desktop\Cursos\Curso ASPNetCore API DDD - Udemy\curso_api_netcode_ddd\src\Api.Data\obj\Debug\netcoreapp2.2\Data.dll
+C:\Users\Rodrigo\Desktop\Cursos\Curso ASPNetCore API DDD - Udemy\curso_api_netcode_ddd\src\Api.Data\obj\Debug\netcoreapp2.2\Data.pdb
+C:\Users\Rodrigo\Desktop\Cursos\Curso ASPNetCore API DDD - Udemy\curso_api_netcode_ddd\src\Api.Data\bin\Debug\netcoreapp2.2\Data.runtimeconfig.json
+C:\Users\Rodrigo\Desktop\Cursos\Curso ASPNetCore API DDD - Udemy\curso_api_netcode_ddd\src\Api.Data\bin\Debug\netcoreapp2.2\Data.runtimeconfig.dev.json
+C:\Users\Rodrigo\Desktop\Cursos\Curso ASPNetCore API DDD - Udemy\curso_api_netcode_ddd\src\Api.Data\bin\Debug\netcoreapp2.2\Domain.dll
+C:\Users\Rodrigo\Desktop\Cursos\Curso ASPNetCore API DDD - Udemy\curso_api_netcode_ddd\src\Api.Data\bin\Debug\netcoreapp2.2\Domain.pdb
+C:\Users\Rodrigo\Desktop\Cursos\Curso ASPNetCore API DDD - Udemy\curso_api_netcode_ddd\src\Api.Data\obj\Debug\netcoreapp2.2\Data.csproj.CopyComplete
