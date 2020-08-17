@@ -5349,11 +5349,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Rodrigo\\Desktop\\Cursos\\Curso ASPNetCore API DDD - Udemy\\curso_api_netcode_ddd\\src\\Api.CrossCutting\\CrossCutting.csproj",
+      "projectUniqueName": "c:\\Users\\Rodrigo\\Desktop\\Cursos\\Curso ASPNetCore API DDD - Udemy\\curso_api_netcode_ddd\\src\\Api.CrossCutting\\CrossCutting.csproj",
       "projectName": "CrossCutting",
-      "projectPath": "C:\\Users\\Rodrigo\\Desktop\\Cursos\\Curso ASPNetCore API DDD - Udemy\\curso_api_netcode_ddd\\src\\Api.CrossCutting\\CrossCutting.csproj",
+      "projectPath": "c:\\Users\\Rodrigo\\Desktop\\Cursos\\Curso ASPNetCore API DDD - Udemy\\curso_api_netcode_ddd\\src\\Api.CrossCutting\\CrossCutting.csproj",
       "packagesPath": "C:\\Users\\Rodrigo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Rodrigo\\Desktop\\Cursos\\Curso ASPNetCore API DDD - Udemy\\curso_api_netcode_ddd\\src\\Api.CrossCutting\\obj\\",
+      "outputPath": "c:\\Users\\Rodrigo\\Desktop\\Cursos\\Curso ASPNetCore API DDD - Udemy\\curso_api_netcode_ddd\\src\\Api.CrossCutting\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -5372,14 +5372,14 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\Rodrigo\\Desktop\\Cursos\\Curso ASPNetCore API DDD - Udemy\\curso_api_netcode_ddd\\src\\Api.Data\\Data.csproj": {
-              "projectPath": "C:\\Users\\Rodrigo\\Desktop\\Cursos\\Curso ASPNetCore API DDD - Udemy\\curso_api_netcode_ddd\\src\\Api.Data\\Data.csproj"
+            "c:\\Users\\Rodrigo\\Desktop\\Cursos\\Curso ASPNetCore API DDD - Udemy\\curso_api_netcode_ddd\\src\\Api.Data\\Data.csproj": {
+              "projectPath": "c:\\Users\\Rodrigo\\Desktop\\Cursos\\Curso ASPNetCore API DDD - Udemy\\curso_api_netcode_ddd\\src\\Api.Data\\Data.csproj"
             },
-            "C:\\Users\\Rodrigo\\Desktop\\Cursos\\Curso ASPNetCore API DDD - Udemy\\curso_api_netcode_ddd\\src\\Api.Domain\\Domain.csproj": {
-              "projectPath": "C:\\Users\\Rodrigo\\Desktop\\Cursos\\Curso ASPNetCore API DDD - Udemy\\curso_api_netcode_ddd\\src\\Api.Domain\\Domain.csproj"
+            "c:\\Users\\Rodrigo\\Desktop\\Cursos\\Curso ASPNetCore API DDD - Udemy\\curso_api_netcode_ddd\\src\\Api.Domain\\Domain.csproj": {
+              "projectPath": "c:\\Users\\Rodrigo\\Desktop\\Cursos\\Curso ASPNetCore API DDD - Udemy\\curso_api_netcode_ddd\\src\\Api.Domain\\Domain.csproj"
             },
-            "C:\\Users\\Rodrigo\\Desktop\\Cursos\\Curso ASPNetCore API DDD - Udemy\\curso_api_netcode_ddd\\src\\Api.Service\\Service.csproj": {
-              "projectPath": "C:\\Users\\Rodrigo\\Desktop\\Cursos\\Curso ASPNetCore API DDD - Udemy\\curso_api_netcode_ddd\\src\\Api.Service\\Service.csproj"
+            "c:\\Users\\Rodrigo\\Desktop\\Cursos\\Curso ASPNetCore API DDD - Udemy\\curso_api_netcode_ddd\\src\\Api.Service\\Service.csproj": {
+              "projectPath": "c:\\Users\\Rodrigo\\Desktop\\Cursos\\Curso ASPNetCore API DDD - Udemy\\curso_api_netcode_ddd\\src\\Api.Service\\Service.csproj"
             }
           }
         }

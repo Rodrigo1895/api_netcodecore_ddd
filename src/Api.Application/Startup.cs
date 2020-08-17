@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using Api.CrossCutting.DependencyInjection;
 using Api.CrossCutting.Mappings;
+using Api.Data.Context;
 using Api.Domain.Security;
 using AutoMapper;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
@@ -9,6 +10,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Rewrite;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -17,14 +19,25 @@ using Microsoft.OpenApi.Models;
 
 namespace Application {
     public class Startup {
-        public Startup(IConfiguration configuration) {
+        public Startup(IConfiguration configuration, IWebHostEnvironment environment) {
             Configuration = configuration;
+            _environment = environment;
         }
 
         public IConfiguration Configuration { get; }
+        public IWebHostEnvironment _environment { get; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services) {
+            if (_environment.IsEnvironment("Testing")) {
+                Environment.SetEnvironmentVariable("DB_CONNECTION", "Persist Security Info=True;Server=localhost;Port=3306;Database=db_api_ddd_integration;Uid=root;Pwd=root");
+                Environment.SetEnvironmentVariable("DATABASE", "MYSQL");
+                Environment.SetEnvironmentVariable("MIGRATION", "APLICAR");
+                Environment.SetEnvironmentVariable("Audience", "ExemploAudience");
+                Environment.SetEnvironmentVariable("Issuer", "ExemploIssuer");
+                Environment.SetEnvironmentVariable("Seconds", "3600");
+            }
+
             // Injeção de Dependências
             ConfigureService.ConfigureDependenciesService(services);
             ConfigureRepository.ConfigureDependenciesRepository(services);
@@ -96,7 +109,7 @@ namespace Application {
                         new OpenApiSecurityScheme {
                             Reference = new OpenApiReference {
                                 Id = "Bearer",
-                                Type = ReferenceType.SecurityScheme
+                                    Type = ReferenceType.SecurityScheme
                             }
                         }, new List<string>()
                     }
@@ -128,10 +141,17 @@ namespace Application {
 
             app.UseRouting();
             app.UseAuthorization();
-            app.UseEndpoints(endpoints =>
-            {
+            app.UseEndpoints(endpoints => {
                 endpoints.MapControllers();
             });
+
+            if (Environment.GetEnvironmentVariable("MIGRATION").ToLower() == "APLICAR".ToLower()) {
+                using(var service = app.ApplicationServices.GetRequiredService<IServiceScopeFactory>().CreateScope()) {
+                    using(var context = service.ServiceProvider.GetService<MyContext>()){
+                        context.Database.Migrate();
+                    }
+                }
+            }
         }
     }
 }

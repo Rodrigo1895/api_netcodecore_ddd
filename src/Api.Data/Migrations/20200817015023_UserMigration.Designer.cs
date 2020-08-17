@@ -9,31 +9,36 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Data.Migrations
 {
     [DbContext(typeof(MyContext))]
-    [Migration("20200402015013_UserMigration")]
+    [Migration("20200817015023_UserMigration")]
     partial class UserMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "2.2.6-servicing-10079")
+                .HasAnnotation("ProductVersion", "3.1.3")
                 .HasAnnotation("Relational:MaxIdentifierLength", 64);
 
             modelBuilder.Entity("Api.Domain.Entities.UserEntity", b =>
                 {
                     b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd();
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("char(36)");
 
-                    b.Property<DateTime?>("CreateAt");
+                    b.Property<DateTime?>("CreateAt")
+                        .HasColumnType("datetime(6)");
 
                     b.Property<string>("Email")
+                        .HasColumnType("varchar(100) CHARACTER SET utf8mb4")
                         .HasMaxLength(100);
 
                     b.Property<string>("Name")
                         .IsRequired()
+                        .HasColumnType("varchar(60) CHARACTER SET utf8mb4")
                         .HasMaxLength(60);
 
-                    b.Property<DateTime?>("UpdateAt");
+                    b.Property<DateTime?>("UpdateAt")
+                        .HasColumnType("datetime(6)");
 
                     b.HasKey("Id");
 
@@ -41,6 +46,16 @@ namespace Data.Migrations
                         .IsUnique();
 
                     b.ToTable("User");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = new Guid("056c2daa-6458-41ef-8a3a-37e192facbf3"),
+                            CreateAt = new DateTime(2020, 8, 16, 22, 50, 22, 399, DateTimeKind.Local).AddTicks(8947),
+                            Email = "adm@email.com",
+                            Name = "Administrador",
+                            UpdateAt = new DateTime(2020, 8, 16, 22, 50, 22, 404, DateTimeKind.Local).AddTicks(6852)
+                        });
                 });
 #pragma warning restore 612, 618
         }

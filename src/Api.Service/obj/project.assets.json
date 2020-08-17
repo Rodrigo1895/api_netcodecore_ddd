@@ -5301,11 +5301,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Rodrigo\\Desktop\\Cursos\\Curso ASPNetCore API DDD - Udemy\\curso_api_netcode_ddd\\src\\Api.Service\\Service.csproj",
+      "projectUniqueName": "c:\\Users\\Rodrigo\\Desktop\\Cursos\\Curso ASPNetCore API DDD - Udemy\\curso_api_netcode_ddd\\src\\Api.Service\\Service.csproj",
       "projectName": "Service",
-      "projectPath": "C:\\Users\\Rodrigo\\Desktop\\Cursos\\Curso ASPNetCore API DDD - Udemy\\curso_api_netcode_ddd\\src\\Api.Service\\Service.csproj",
+      "projectPath": "c:\\Users\\Rodrigo\\Desktop\\Cursos\\Curso ASPNetCore API DDD - Udemy\\curso_api_netcode_ddd\\src\\Api.Service\\Service.csproj",
       "packagesPath": "C:\\Users\\Rodrigo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Rodrigo\\Desktop\\Cursos\\Curso ASPNetCore API DDD - Udemy\\curso_api_netcode_ddd\\src\\Api.Service\\obj\\",
+      "outputPath": "c:\\Users\\Rodrigo\\Desktop\\Cursos\\Curso ASPNetCore API DDD - Udemy\\curso_api_netcode_ddd\\src\\Api.Service\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -5324,11 +5324,11 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\Rodrigo\\Desktop\\Cursos\\Curso ASPNetCore API DDD - Udemy\\curso_api_netcode_ddd\\src\\Api.Data\\Data.csproj": {
-              "projectPath": "C:\\Users\\Rodrigo\\Desktop\\Cursos\\Curso ASPNetCore API DDD - Udemy\\curso_api_netcode_ddd\\src\\Api.Data\\Data.csproj"
+            "c:\\Users\\Rodrigo\\Desktop\\Cursos\\Curso ASPNetCore API DDD - Udemy\\curso_api_netcode_ddd\\src\\Api.Data\\Data.csproj": {
+              "projectPath": "c:\\Users\\Rodrigo\\Desktop\\Cursos\\Curso ASPNetCore API DDD - Udemy\\curso_api_netcode_ddd\\src\\Api.Data\\Data.csproj"
             },
-            "C:\\Users\\Rodrigo\\Desktop\\Cursos\\Curso ASPNetCore API DDD - Udemy\\curso_api_netcode_ddd\\src\\Api.Domain\\Domain.csproj": {
-              "projectPath": "C:\\Users\\Rodrigo\\Desktop\\Cursos\\Curso ASPNetCore API DDD - Udemy\\curso_api_netcode_ddd\\src\\Api.Domain\\Domain.csproj"
+            "c:\\Users\\Rodrigo\\Desktop\\Cursos\\Curso ASPNetCore API DDD - Udemy\\curso_api_netcode_ddd\\src\\Api.Domain\\Domain.csproj": {
+              "projectPath": "c:\\Users\\Rodrigo\\Desktop\\Cursos\\Curso ASPNetCore API DDD - Udemy\\curso_api_netcode_ddd\\src\\Api.Domain\\Domain.csproj"
             }
           }
         }
