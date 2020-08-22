@@ -14,7 +14,6 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Options;
 using Microsoft.OpenApi.Models;
 
 namespace Application {
@@ -58,20 +57,14 @@ namespace Application {
             var signingConfiguration = new SigningConfigurations();
             services.AddSingleton(signingConfiguration);
 
-            var tokenConfigurations = new TokenConfiguration();
-            new ConfigureFromConfigurationOptions<TokenConfiguration>(
-                    Configuration.GetSection("TokenConfigurations"))
-                .Configure(tokenConfigurations);
-            services.AddSingleton(tokenConfigurations);
-
             services.AddAuthentication(authOptions => {
                 authOptions.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
                 authOptions.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
             }).AddJwtBearer(bearerOptions => {
                 var paramsValidation = bearerOptions.TokenValidationParameters;
                 paramsValidation.IssuerSigningKey = signingConfiguration.Key;
-                paramsValidation.ValidAudience = tokenConfigurations.Audience;
-                paramsValidation.ValidIssuer = tokenConfigurations.Issuer;
+                paramsValidation.ValidAudience = Environment.GetEnvironmentVariable("Audience");
+                paramsValidation.ValidIssuer = Environment.GetEnvironmentVariable("Issuer");
                 paramsValidation.ValidateIssuerSigningKey = true;
                 paramsValidation.ValidateLifetime = true;
                 paramsValidation.ClockSkew = TimeSpan.Zero;
@@ -147,7 +140,7 @@ namespace Application {
 
             if (Environment.GetEnvironmentVariable("MIGRATION").ToLower() == "APLICAR".ToLower()) {
                 using(var service = app.ApplicationServices.GetRequiredService<IServiceScopeFactory>().CreateScope()) {
-                    using(var context = service.ServiceProvider.GetService<MyContext>()){
+                    using(var context = service.ServiceProvider.GetService<MyContext>()) {
                         context.Database.Migrate();
                     }
                 }
