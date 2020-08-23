@@ -7,7 +7,7 @@ namespace Api.Domain.Interfaces.Services.Municipio {
     public interface IMunicipioService {
         Task<MunicipioDto> Get(Guid id);
         Task<MunicipioDtoCompleto> GetCompleteById(Guid id);
-        Task<MunicipioDto> GetCompleteByIBGE(int codIBGE);
+        Task<MunicipioDtoCompleto> GetCompleteByIBGE(int codIBGE);
         Task<IEnumerable<MunicipioDto>> GetAll();
         Task<MunicipioDtoCreateResult> Post(MunicipioDtoCreate municipio);
         Task<MunicipioDtoUpdateResult> Put(MunicipioDtoUpdate municipio);

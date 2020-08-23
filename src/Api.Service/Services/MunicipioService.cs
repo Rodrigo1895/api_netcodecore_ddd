@@ -28,9 +28,9 @@ namespace Api.Service.Services {
             return _mapper.Map<MunicipioDtoCompleto>(entity);
         }
 
-        public async Task<MunicipioDto> GetCompleteByIBGE(int codIBGE) {
+        public async Task<MunicipioDtoCompleto> GetCompleteByIBGE(int codIBGE) {
             var entity = await _repository.GetCompleteByIBGE(codIBGE);
-            return _mapper.Map<MunicipioDto>(entity);
+            return _mapper.Map<MunicipioDtoCompleto>(entity);
         }
 
         public async Task<IEnumerable<MunicipioDto>> GetAll() {
