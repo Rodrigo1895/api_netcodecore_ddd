@@ -12,6 +12,9 @@ namespace Api.CrossCutting.DependencyInjection {
         public static void ConfigureDependenciesRepository(IServiceCollection serviceCollection) {
             serviceCollection.AddScoped(typeof(IRepository<>), typeof(BaseRepository<>));
             serviceCollection.AddScoped<IUserRepository, UserImplementation>();
+            serviceCollection.AddScoped<IUfRepository, UfImplementation>();
+            serviceCollection.AddScoped<IMunicipioRepository, MunicipioImplementation>();
+            serviceCollection.AddScoped<ICepRepository, CepImplementation>();
 
             if (Environment.GetEnvironmentVariable("DATABASE").ToLower() == "SQLSERVER".ToLower()) {
                 //"Server=.\\SQLEXPRESS2019;Database=db_api_ddd;User Id=sa;Password=root"
